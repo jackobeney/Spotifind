@@ -1,0 +1,35 @@
+<div class="dashboard-wrapper">
+
+  <h2 class="page-title">Find artists similar to... {{#if searchTerm}}{{searchTerm}}{{/if}}</h2>
+
+  <div class="searchContainer">
+    <div class="row">
+      <div class="col-lg-5 col-sm-5 col-sx-5 ">
+        <div class="input-group">
+          <input id="searchValue" type="text" class="form-control">
+          <span class="input-group-btn">
+            <button id="searchSubmit" class="btn btn-default" type="button">Find!</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{#if searchData.artists}}
+    <div id="searchResults">
+      {{#each searchData.artists}}
+        <div class="col-lg-2">
+          <a href="/artists/{{name}}" ><div class="artistImages tiles" style="background-image: url('{{imageUrl}}');"><img src="{{imageUrl}}" alt="{{name}}"><p class="artistName">{{name}}</p></div></a>
+        </div>
+      {{/each}}
+    </div>
+  {{/if}}
+
+  {{#if searchData.noResults}}
+    <h3 class="page-title2">Sorry, no results found.</h3>
+  {{/if}}
+
+  {{!-- https://embed.spotify.com/?uri={{foreign_ids.[0].foreign_id}} --}}
+
+</div>
+<script src="/javascript/similarArtists.js"></script>

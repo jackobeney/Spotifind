@@ -1,0 +1,52 @@
+<div id="mainnav">
+  <div class="user-profile-pic">
+    <img src="{{userData.images.[0].url}}" alt="Profile Picture">
+  </div>
+
+  <ul>
+    <li {{#if home}}class="active"{{/if}}>
+      <a href="/">
+        <div class="icon">
+          <span class="fs1" aria-hidden="true" data-icon="&#xe07f;"></span>
+        </div>
+        Find
+      </a>
+    </li>
+    <li {{#if playlists}}class="active"{{/if}}>
+      <a href="/playlists">
+        <div class="icon">
+          <span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span>
+        </div>
+        Playlists
+      </a>
+    </li>
+    <li {{#if artists}}class="active"{{/if}}>
+      <a href="/artists">
+        <div class="icon">
+          <span class="fs1" aria-hidden="true" data-icon="&#xe071;"></span>
+        </div>
+        Artists
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/HXJackObeney/spotifyApp">
+        <div class="icon">
+          <span class="fs1" aria-hidden="true" data-icon="&#xe18a;"></span>
+        </div>
+        GitHub
+      </a>
+    </li>
+    <div class="APIs">
+    <li>
+      <a href="https://developer.spotify.com/">
+        <img src="/images/spotifyLogoDark.png" width="40px" height="50px">
+      </a>
+    </li>
+    <li>
+      <a href="http://developer.echonest.com/">
+        <img src="/images/echoNest.gif">
+      </a>
+    </li>
+    </div>
+  </ul>
+</div>

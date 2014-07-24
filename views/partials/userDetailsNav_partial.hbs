@@ -1,0 +1,26 @@
+<div id="mini-nav">
+  <ul>
+    <li>
+      <a href="">
+        <span class="text-label">{{userData.display_name}}</span><span class="fs1" aria-hidden="true"></span>
+      </a>
+      <ul class="user-summary">
+        <li>
+          <div class="summary">
+            <div class="user-pic">
+              <img src="{{userData.images.[0].url}}" alt="Profile Picture"/>
+            </div>
+            <div class="basic-details">
+              <h4 class="no-margin">{{userData.display_name}}</h4>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </li>
+        <li>
+          <button class="btn btn-xs btn-danger pull-right" onclick="location.href='/logout'">Logout</button>
+          <span class="clearfix"></span>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

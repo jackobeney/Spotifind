@@ -1,0 +1,29 @@
+{
+  "name": "spotifyApp",
+  "version": "0.0.1",
+  "description": "spotify app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HXJackObeney/spotifyApp.git"
+  },
+  "author": "Jack Obeney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HXJackObeney/spotifyApp/issues"
+  },
+  "homepage": "https://github.com/HXJackObeney/spotifyApp",
+  "dependencies": {
+    "async": "^0.9.0",
+    "cookie-parser": "^1.3.2",
+    "express": "^4.6.1",
+    "hbs": "^2.7.0",
+    "passport": "^0.2.0",
+    "request": "^2.34.0",
+    "serve-favicon": "^2.0.1",
+    "sessions": "0.0.2-7"
+  }
+}
